@@ -5,7 +5,7 @@
 	verbose="3">
 
 	<listeners>
-		<!-- <listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />  -->
+		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
 		
 		<!-- <listener class-name="com.qa.hubspot.listeners.pdfListener" /> -->
 
