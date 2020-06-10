@@ -31,17 +31,18 @@ public LogInPage(WebDriver driver) {
 
 // Page Actions:
 
-@Step("Step : get login page title")
-public String getLogInPageTitle() {
+ @Step("get login page title")
+ public String getLogInPageTitle() {
 	return elementUtil.WaitForTitleToBePresent(Constants.LOGIN_PAGE_TITLE, 10);
 }
-@Step("Step : check signup link on login page")
-public boolean verifySignUpLink() {
+ @Step("check signup link on login page")
+
+ public boolean verifySignUpLink() {
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	return	elementUtil.doisdiplayed(signupLink);
 }
 
-@Step("Login to app with user name : {0} and password : {1}")
+ @Step("Login to app with user name: {0} and password: {1}")
 public HomePage doLogIn(String username,String Password) {
 	
 	elementUtil.waitForElementPresent(this.username, 10);
